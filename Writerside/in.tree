@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="Instance Name"
+                 start-page="introducao_ao_intellij.md">
+
+    <toc-element topic="introducao_ao_intellij.md"/>
+    <toc-element topic="criar_seu_primeiro_app_java.md"/>
+    <toc-element topic="escrevendo-e-lendo-informacoes.md"/>
+</instance-profile>
