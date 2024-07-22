@@ -4,8 +4,9 @@
 
 <instance-profile id="in"
                  name="Tutoriais aulas"
-                 start-page="introducao_ao_intellij.md">
+                 start-page="getting_started.md">
 
+    <toc-element topic="getting_started.md"/>
     <toc-element toc-title="DDD - Primeiro Semestre">
         <toc-element topic="introducao_ao_intellij.md"/>
         <toc-element topic="criar_seu_primeiro_app_java.md"/>
