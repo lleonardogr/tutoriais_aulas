@@ -54,7 +54,7 @@ Para executar o código no IntelliJ IDEA, siga estas etapas:
 3. Clique com o botão direito do mouse dentro do corpo do método main.
 4. Selecione a opção “Run ‘meu_primeiro_projeto_java.main()’”. Isso iniciará a execução do programa.
 
-![alt text](../images/run_hello_world.png)
+![alt text](../../images/run_hello_world.png)
 
 Você também pode executar o código pressionando a combinação de teclas Shift + F10 ou clicando no botão “Run” na barra de ferramentas superior.
 
