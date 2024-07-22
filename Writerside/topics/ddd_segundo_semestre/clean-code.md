@@ -2,12 +2,12 @@
 
 ## Sumário
 
-1. [Introdução](#introdução)
-2. [Capítulo 1: Clean Code](#capítulo-1-clean-code)
-3. [Capítulo 2: Significância dos Nomes](#capítulo-2-significância-dos-nomes)
-4. [Capítulo 3: Funções](#capítulo-3-funções)
-5. [Aplicação em Java com Reflections e Anotações](#aplicação-em-java-com-reflections-e-anotações)
-6. [Comparação de Código: Antes e Depois](#comparação-de-código-antes-e-depois)
+1. [Introdução](#introdu-o)
+2. [Capítulo 1: Clean Code](#cap-tulo-1-clean-code)
+3. [Capítulo 2: Significância dos Nomes](#cap-tulo-2-signific-ncia-dos-nomes)
+4. [Capítulo 3: Funções](#cap-tulo-3-fun-es)
+5. [Aplicação em Java com Reflections e Anotações](#aplica-o-em-java-com-reflections-e-anota-es)
+6. [Comparação de Código: Antes e Depois](#compara-o-de-c-digo-antes-e-depois)
 
 ## Introdução
 

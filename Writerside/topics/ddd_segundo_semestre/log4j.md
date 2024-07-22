@@ -35,7 +35,7 @@ Crie um arquivo `log4j2.xml` na pasta `src/main/resources` do seu projeto com a 
 <Configuration status="WARN">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg %n" />
         </Console>
     </Appenders>
     <Loggers>

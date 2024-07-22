@@ -11,7 +11,7 @@ Este documento descreve os conceitos fundamentais e a infraestrutura comum envol
 
 Oracle é um sistema de gerenciamento de banco de dados relacional robusto e amplamente utilizado em ambientes empresariais. Suporta grandes volumes de dados e transações, tornando-o ideal para aplicações empresariais.
 
-#### Características:
+#### Características do Oracle:
 
 - Escalabilidade e desempenho.
 - Recursos avançados de segurança.
@@ -21,7 +21,7 @@ Oracle é um sistema de gerenciamento de banco de dados relacional robusto e amp
 
 Java é uma linguagem de programação orientada a objetos usada para desenvolver o backend de aplicações. JAX-RS (Java API for RESTful Web Services) é uma especificação Java para a criação de serviços web RESTful.
 
-#### Características:
+#### Características do Jax-RS:
 
 - Portabilidade e robustez.
 - Suporte a múltiplas bibliotecas e frameworks.
