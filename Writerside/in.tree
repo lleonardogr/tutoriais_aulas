@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name"
+                 name="Tutoriais aulas"
                  start-page="introducao_ao_intellij.md">
 
     <toc-element topic="introducao_ao_intellij.md"/>
