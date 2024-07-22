@@ -61,6 +61,9 @@ Você também pode executar o código pressionando a combinação de teclas Shif
 Após a execução, você verá a saída do programa no painel de saída do IntelliJ IDEA. No exemplo fornecido, a saída será “Hello World!”.
 
 <seealso>
-- [Documentação do IntelliJ IDEA](https://www.jetbrains.com/help/idea/)
-- [Tutorial Java](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html)
+    <category ref="wrs">
+        <a href="https://www.jetbrains.com/help/idea/">Documentação do IntelliJ IDEA</a>
+        <a href="https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html">Tutorial Java</a>
+    </category>
 </seealso>
+

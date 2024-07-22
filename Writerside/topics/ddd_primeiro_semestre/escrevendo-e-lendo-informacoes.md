@@ -100,6 +100,8 @@ Nesta parte, você aprenderá como usar a classe `Scanner` para ler entrada do u
 Neste tutorial, você aprendeu como usar `println`, `printf` e `Scanner` em Java para imprimir saída e ler entrada. Agora você tem o conhecimento básico para começar a construir programas Java mais complexos.
 
 <seealso>
-[Tutorial de escrita e leitura de informações em Java no Baeldung](https://www.baeldung.com/java-io)
-- [Documentação do IntelliJ sobre escrita e leitura de informações em Java](https://www.jetbrains.com/help/idea/working-with-files.html)
+    <category ref="wrs">
+      <a href="https://www.baeldung.com/java-io">Tutorial de escrita e leitura de informações em Java no Baeldung</a>
+      <a href="https://www.jetbrains.com/help/idea/working-with-files.html">Documentação do IntelliJ sobre escrita e leitura de informações em Java</a>
+   </category>
 </seealso>

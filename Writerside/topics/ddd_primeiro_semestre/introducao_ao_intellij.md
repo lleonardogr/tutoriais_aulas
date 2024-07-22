@@ -29,6 +29,8 @@ Após a instalação, abra o IntelliJ e siga as etapas de configuração inicial
 Agora você está pronto para começar a desenvolver projetos Java no IntelliJ. Explore os recursos e ferramentas disponíveis para tornar sua experiência de programação mais produtiva.
 
 <seealso>
-[Site oficial do IntelliJ](https://www.jetbrains.com/idea/download/?section=mac)
-[Como instalar o intellij](https://www.jetbrains.com/help/idea/installation-guide.html)
+    <category ref="wrs">
+     <a href="https://www.jetbrains.com/idea/download/?section=mac">Site oficial do IntelliJ</a>
+     <a href="https://www.jetbrains.com/help/idea/installation-guide.html">Como instalar o intellij</a>
+    </category>
 </seealso>
