@@ -49,5 +49,12 @@ O Scanner é uma classe em Java que permite ler entrada do usuário. Aqui está 
 Neste tutorial, você aprendeu sobre os tipos primitivos em Java, como declarar e inicializar variáveis e como armazenar valores usando o Scanner.
 
 <seealso>
-<!--Forneça alguns links relacionados a artigos de como fazer-->
+  <category ref="wrs">
+    <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html">Tipos de Dados em Java</a>
+    <a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html">Convenções de Nomenclatura em Java</a>
+    <a href="https://www.geeksforgeeks.org/variables-in-java/">Java Variable Types</a>
+    <a href="https://www.codecademy.com/learn/learn-java">Curso de Introdução ao Java na Codecademy</a>
+    <a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html">Documentação Oficial do Java sobre Variáveis</a>
+  </category>
 </seealso>
+
