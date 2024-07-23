@@ -8,6 +8,9 @@
 
     <toc-element topic="getting_started.md"/>
     <toc-element toc-title="DDD - Primeiro Semestre">
+        <toc-element topic="Condicionais-no-Java.md"/>
+        <toc-element topic="Variaiveis-no-Java.md"/>
+        <toc-element topic="Java-Overview.md"/>
         <toc-element topic="introducao_ao_intellij.md"/>
         <toc-element topic="criar_seu_primeiro_app_java.md"/>
         <toc-element topic="escrevendo-e-lendo-informacoes.md"/>
@@ -24,4 +27,5 @@
         <toc-element topic="clean-code.md"/>
         <toc-element topic="enterprise-app-infrastructure.md"/>
     </toc-element>
+    <toc-element topic="condicionais_java.md"/>
 </instance-profile>
