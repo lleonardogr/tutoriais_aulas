@@ -119,7 +119,7 @@ public class ExemploLambda {
 3. **Expressão Lambda**: `numero -> System.out.println("Número: " + numero)` é a função que será executada para cada elemento.
 
 <seealso>
-<category ref="wsr">
+<category ref="wrs">
 <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html">Documentação Oficial do Java sobre Loops</a>
 <a href="https://www.geeksforgeeks.org/loops-in-java/">Java Loops - GeeksforGeeks</a>
 <a href="https://www.w3schools.com/java/java_while_loop.asp">Tutorial de Java - W3Schools</a>
