@@ -1,4 +1,3 @@
-
 # OO: Classes
 
 ## Introdução
@@ -250,7 +249,7 @@ public class TesteCartaMagic {
 
 <seealso>
     <category ref="wrs">
-        <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Documentação Oficial do Java sobre Classes <a>
+        <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Documentação Oficial do Java sobre Classes </a>
         <a href="https://www.baeldung.com/java-encapsulation">Encapsulamento em Java - Baeldung</a>
         <a href="https://www.geeksforgeeks.org/constructors-in-java/">Construtores em Java - GeeksforGeeks</a>
         <a href="https://www.w3schools.com/java/java_methods.asp">Métodos em Java - W3Schools</a>
