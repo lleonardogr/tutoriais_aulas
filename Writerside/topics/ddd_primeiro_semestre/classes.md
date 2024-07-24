@@ -1,5 +1,5 @@
 
-# Tutorial: Classes em Java
+# OO: Classes
 
 ## Introdução
 
@@ -11,6 +11,9 @@ Uma classe em Java é composta por:
 
 - **Atributos**: Também chamados de variáveis de instância, eles representam as propriedades de um objeto.
 - **Métodos**: Também chamados de funções, eles definem os comportamentos que um objeto pode realizar.
+- **Construtores**: Métodos especiais usados para inicializar objetos.
+- **Getters e Setters**: Métodos para acessar e modificar os atributos de um objeto.
+- **Controles de Acesso**: Definem a visibilidade dos atributos e métodos (público, privado, protegido).
 
 ### Estrutura Básica
 ```java
@@ -38,6 +41,65 @@ public class NomeDaClasse {
         this.atributo1 = atributo1;
     }
 }
+```
+
+### Construtores
+
+Construtores são métodos especiais que são chamados quando um objeto é instanciado. Eles têm o mesmo nome da classe e não têm um tipo de retorno.
+
+#### Exemplo de construtor
+
+```java
+public class Musica {
+    // Atributos
+    private String titulo;
+    private String artista;
+    private int duracao; // duração em segundos
+
+    // Construtor
+    public Musica(String titulo, String artista, int duracao) {
+        this.titulo = titulo;
+        this.artista = artista;
+        this.duracao = duracao;
+    }
+
+    // Métodos
+    // ...
+}
+```
+
+### Getters e Setters
+Getters e setters são métodos que permitem o acesso e a modificação dos atributos de um objeto. Eles seguem uma convenção de nomenclatura específica: get para obter o valor e set para modificar o valor.
+
+```java
+// Getters
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getArtista() {
+        return artista;
+    }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
+    // Setters
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+
+    // Outros métodos
+    // ...
 ```
 
 ## Exemplo 1: Classe `Musica`
@@ -186,13 +248,14 @@ public class TesteCartaMagic {
 }
 ```
 
-## <seealso>
-
-- [Documentação Oficial do Java sobre Classes](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)
-- [Encapsulamento em Java - Baeldung](https://www.baeldung.com/java-encapsulation)
-- [Construtores em Java - GeeksforGeeks](https://www.geeksforgeeks.org/constructors-in-java/)
-- [Métodos em Java - W3Schools](https://www.w3schools.com/java/java_methods.asp)
-
+<seealso>
+    <category ref="wrs">
+        <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html">Documentação Oficial do Java sobre Classes <a>
+        <a href="https://www.baeldung.com/java-encapsulation">Encapsulamento em Java - Baeldung</a>
+        <a href="https://www.geeksforgeeks.org/constructors-in-java/">Construtores em Java - GeeksforGeeks</a>
+        <a href="https://www.w3schools.com/java/java_methods.asp">Métodos em Java - W3Schools</a>
+    </category>
+</seealso>
 ## Conclusão
 
 Classes são a base da programação orientada a objetos em Java. Elas permitem a criação de objetos com atributos e comportamentos específicos. Compreender como definir e usar classes é fundamental para qualquer desenvolvedor Java. Experimente os exemplos e veja como esses conceitos se aplicam no desenvolvimento de software.

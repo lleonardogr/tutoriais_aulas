@@ -1,5 +1,5 @@
 
-# Tutorial: Introdução à Orientação a Objetos em Java
+# Introdução à Orientação a Objetos em Java
 
 ## Introdução
 
@@ -38,7 +38,7 @@ class Cachorro extends Animal {
 
 O encapsulamento é o mecanismo de restringir o acesso a alguns dos componentes de um objeto e pode ser alcançado usando modificadores de acesso. Isso melhora a segurança e a manutenção do código.
 
-#### Exemplo
+#### Exemplo {id="exemplo_1"}
 ```java
 class Pessoa {
     private String nome;
@@ -66,7 +66,7 @@ class Pessoa {
 
 A herança permite que uma classe (subclasse) herde atributos e métodos de outra classe (superclasse). Isso promove a reutilização do código.
 
-#### Exemplo
+#### Exemplo {id="exemplo_2"}
 ```java
 class Animal {
     void dormir() {
@@ -113,14 +113,15 @@ class Cachorro extends Animal {
 }
 ```
 
-## <seealso>
-
-- [Documentação Oficial do Java sobre Orientação a Objetos](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
-- [Pilares da Orientação a Objetos - GeeksforGeeks](https://www.geeksforgeeks.org/four-pillars-of-object-oriented-programming/)
-- [Java OOP - W3Schools](https://www.w3schools.com/java/java_oop.asp)
-- [Encapsulamento em Java - Baeldung](https://www.baeldung.com/java-encapsulation)
-- [Polimorfismo em Java - Oracle](https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html)
-
+<seealso>
+    <category ref="wrs">
+        <a href="https://docs.oracle.com/javase/tutorial/java/concepts/index.html">Documentação Oficial do Java sobre Orientação a Objetos</a>
+        <a href="https://www.geeksforgeeks.org/four-pillars-of-object-oriented-programming/">Pilares da Orientação a Objetos - GeeksforGeeks</a>
+        <a href="https://www.w3schools.com/java/java_oop.asp">Java OOP - W3Schools</a>
+        <a href="https://www.baeldung.com/java-encapsulation">Encapsulamento em Java - Baeldung</a>
+        <a href="https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html">Polimorfismo em Java - Oracle</a>
+    </category>
+</seealso>
 ## Conclusão
 
 A orientação a objetos é um paradigma poderoso que permite criar software modular, reutilizável e fácil de manter. Compreender os pilares da OO é fundamental para qualquer desenvolvedor Java. Experimente os exemplos e veja como esses conceitos se aplicam no desenvolvimento de software.
