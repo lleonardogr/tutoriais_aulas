@@ -7,14 +7,6 @@ Responda à pergunta: "Por que devo seguir este tutorial?"
 Forneça um breve resumo do tutorial.
 Neste tutorial, você aprenderá como usar `println`, `printf` e `Scanner` em Java.
 
-## Antes de começar
-
-Liste os pré-requisitos que são necessários ou recomendados.
-
-Certifique-se de que:
-- Você tem conhecimento básico da linguagem de programação Java.
-- Você tem um ambiente de desenvolvimento Java configurado.
-
 ## Parte 1: Usando println
 
 Nesta parte, você aprenderá como usar o método `println` para imprimir saída no console.
