@@ -1,13 +1,6 @@
-# Variáveis no Java
+# Variáveis e tipos primitivos
 
 Este tutorial fornece uma visão geral de como as variáveis funcionam em Java, os tipos primitivos disponíveis e como armazená-los usando o Scanner.
-
-## Antes de começar
-
-Certifique-se de que você tenha os seguintes pré-requisitos:
-
-- Primeiro pré-requisito
-- Segundo pré-requisito
 
 ## Visão geral
 

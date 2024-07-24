@@ -10,11 +10,6 @@ Este tutorial vai ensinar você a usar condicionais em Java, incluindo a estrutu
 - Compreender a estrutura if-else em Java
 - Utilizar operadores ternários para simplificar expressões condicionais
 
-## Pré-requisitos
-
-- Conhecimento básico de sintaxe Java
-- Um ambiente de desenvolvimento configurado (como IntelliJ IDEA)
-
 ## Estrutura if-else
 
 ### O que é uma condicional if-else?
