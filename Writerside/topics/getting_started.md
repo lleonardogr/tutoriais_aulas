@@ -1,4 +1,4 @@
-# Getting Started
+# Primeiros passos
 
 Olá mundo! Bem-vindo aos Tutoriais de Java! Este guia foi projetado para ajudá-lo a começar com a programação em Java e servir como referência para estudantes durante suas aulas de Java.
 

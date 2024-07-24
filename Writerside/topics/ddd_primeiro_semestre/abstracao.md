@@ -1,5 +1,4 @@
-
-# Tutorial: Abstração em Java
+# OO: Abstração em Java
 
 ## Introdução
 
@@ -11,10 +10,13 @@ A abstração é um dos pilares fundamentais da programação orientada a objeto
 Abstração se refere ao ato de representar características essenciais sem incluir a complexidade de fundo. Em Java, isso é frequentemente feito usando classes abstratas e interfaces.
 
 ### Exemplos de Abstração
+- **Abstração tradicional**: Uma classe com as propriedades e métodos implementadas é realizada a abstração.
 - **Classe Abstrata**: Uma classe que não pode ser instanciada diretamente e pode conter métodos abstratos que não têm implementação.
 - **Interface**: Um contrato que define um conjunto de métodos que uma classe deve implementar.
 
 ### Abstração em Java
+
+Vimos no outro capitulo o processo de abstrair algo do mundo real para o mundo virtual.
 
 #### Classe Abstrata
 
@@ -82,7 +84,7 @@ No livro "Patterns of Enterprise Application Architecture", Martin Fowler discut
 
 ## Exemplo Completo de Abstração
 
-### Classe Abstrata
+### Exemplo de Classe Abstrata
 ```java
 abstract class Veiculo {
     abstract void acelerar();
@@ -99,7 +101,7 @@ class Carro extends Veiculo {
 }
 ```
 
-### Interface
+### Exemplo de Interface
 ```java
 interface Pagamento {
     void processarPagamento(double valor);
@@ -118,12 +120,14 @@ class PagamentoPaypal implements Pagamento {
 }
 ```
 
-## <seealso>
-
-- [Documentação Oficial do Java sobre Abstração](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
-- [Clean Code - Robert C. Martin](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
-- [Effective Java - Joshua Bloch](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)
-- [Patterns of Enterprise Application Architecture - Martin Fowler](https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420)
+<seealso>
+    <category ref="wrs">
+        <a href="https://docs.oracle.com/javase/tutorial/java/concepts/index.html">Documentação Oficial do Java sobre Abstração</a>
+        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code - Robert C. Martin</a>
+        <a href="https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997">Effective Java - Joshua Bloch</a>
+        <a href="https://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420">Patterns of Enterprise Application Architecture - Martin Fowler</a>
+    </category>
+</seealso>
 
 ## Conclusão
 

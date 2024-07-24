@@ -166,6 +166,8 @@ public class TesteMusica {
 
 ## Exemplo 2: Classe `CartaMagic`
 
+![magic_card.png](magic_card.png)
+
 Vamos criar uma classe `CartaMagic` que tem atributos como `nome`, `tipo`, `custo`, `poder`, `resistencia` e métodos para obter essas informações.
 
 ### Definição da Classe `CartaMagic`

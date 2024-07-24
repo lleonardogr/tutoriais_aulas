@@ -17,6 +17,7 @@
         <toc-element topic="loops_java.md"/>
         <toc-element topic="introducao_oo.md"/>
         <toc-element topic="classes.md"/>
+        <toc-element topic="abstracao.md"/>
     </toc-element>
     <toc-element toc-title="DDD - Segundo Semestre">
         <toc-element topic="interfaces-Java.md"/>
@@ -30,5 +31,6 @@
         <toc-element topic="clean-code.md"/>
         <toc-element topic="enterprise-app-infrastructure.md"/>
     </toc-element>
+    
 
 </instance-profile>
