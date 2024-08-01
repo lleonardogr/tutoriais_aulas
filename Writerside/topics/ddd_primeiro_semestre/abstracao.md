@@ -1,4 +1,4 @@
-# OO: Abstração em Java
+# OO: Abstração
 
 ## Introdução
 
