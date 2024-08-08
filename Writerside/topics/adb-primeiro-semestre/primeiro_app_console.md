@@ -178,5 +178,6 @@ namespace Calculadora
 <seealso>
    <category ref="wrs">
       <a href="https://learn.microsoft.com/pt-br/visualstudio/get-started/csharp/tutorial-console?view=vs-2022"/>
+      <a href="https://learn.microsoft.com/pt-br/visualstudio/get-started/csharp/tutorial-console-part-2?view=vs-2022"/>   
    </category>
 </seealso>
