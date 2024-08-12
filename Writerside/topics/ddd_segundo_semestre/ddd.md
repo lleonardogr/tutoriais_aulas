@@ -23,6 +23,20 @@ public class Pedido {
 }
 ```
 
+#### Entidade Base
+
+A `EntidadeBase` é uma classe abstrata que contém os atributos comuns a todas as outras entidades do sistema, como `id` e `nome`. Ela serve como uma base para as outras classes, evitando a repetição de código.
+
+Exemplo:
+```java
+public abstract class EntidadeBase {
+    protected int id;
+    protected String nome;
+
+    // Construtores, getters e setters
+}
+```
+
 ### Repositórios (Repositories) em DDD
 
 Repositories são abstrações que gerenciam o armazenamento e recuperação de entidades, sem expor detalhes de implementação do banco de dados.
@@ -34,6 +48,36 @@ public interface PedidoRepository {
     void delete(Pedido pedido);
 }
 ```
+
+#### Repositório Genérico
+
+A interface RepositorioGenerico<T> define os métodos CRUD básicos que serão implementados pelos repositórios específicos das entidades.
+
+```java
+public interface RepositorioGenerico<T> {
+    void adicionar(T entidade);
+    void atualizar(T entidade);
+    void remover(int id);
+    List<T> listar();
+}
+```
+
+### Camada de Serviço (Service)
+
+A camada de serviço é responsável por validar os dados das entidades antes de serem persistidos no repositório.
+
+#### Validador de Entidades
+
+A classe ValidadorEntidades fornece métodos estáticos para validar atributos específicos das entidades, como verificar se o nome não está vazio ou se o ano de lançamento é válido.
+
+```java
+public class ProdutoService {
+    public static void validarProduto(Produto produto) {
+        // Validações para o produto
+    }
+}
+```
+
 
 ## Modelo Beans/DAO
 
@@ -74,6 +118,7 @@ public class PedidoDAO {
 1. **Complexidade do Domínio**: DDD é útil em sistemas complexos onde a lógica do negócio e as regras do domínio são mais importantes e complicadas.
 2. **Evolução e Manutenção**: DDD facilita a evolução e manutenção do software, permitindo mudanças no domínio de forma mais ágil.
 3. **Colaboração**: Facilita a comunicação entre desenvolvedores e especialistas do domínio através da modelagem baseada no domínio real.
+
 
 ## Conclusão
 
