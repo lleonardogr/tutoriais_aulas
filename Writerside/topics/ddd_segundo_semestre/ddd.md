@@ -51,7 +51,7 @@ public interface PedidoRepository {
 
 #### Repositório Genérico
 
-A interface RepositorioGenerico<T> define os métodos CRUD básicos que serão implementados pelos repositórios específicos das entidades.
+A interface RepositorioGenerico T define os métodos CRUD básicos que serão implementados pelos repositórios específicos das entidades.
 
 ```java
 public interface RepositorioGenerico<T> {
