@@ -25,13 +25,13 @@ public class Pedido {
 
 #### Entidade Base
 
-A `EntidadeBase` é uma classe abstrata que contém os atributos comuns a todas as outras entidades do sistema, como `id` e `nome`. Ela serve como uma base para as outras classes, evitando a repetição de código.
+A `EntidadeBase` é uma classe abstrata que contém os atributos comuns a todas as outras entidades do sistema, como `id`. Ela serve como uma base para as outras classes, evitando a repetição de código.
 
 Exemplo:
 ```java
 public abstract class EntidadeBase {
     protected int id;
-    protected String nome;
+    protected bool published;
 
     // Construtores, getters e setters
 }
