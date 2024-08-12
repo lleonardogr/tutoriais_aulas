@@ -34,5 +34,7 @@
     <toc-element toc-title="Advanced Business Application With .NET - Primeiro Semestre">
         <toc-element topic="instalando_visual_studio_rider.md"/>
         <toc-element topic="primeiro_app_console.md"/>
+        <toc-element topic="web_scraping_csharp_guide.md"/>
     </toc-element>
+
 </instance-profile>
