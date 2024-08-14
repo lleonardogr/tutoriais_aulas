@@ -32,19 +32,53 @@ Primeiro, você precisa adicionar a dependência Log4j ao seu projeto. Se estive
 Crie um arquivo `log4j2.xml` na pasta `src/main/resources` do seu projeto com a seguinte configuração básica:
 
 ```xml
+<?xml version="1.0" encoding="UTF-8" ?>
 <Configuration status="WARN">
     <Appenders>
+        <File name="File" fileName="app.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg %n" />
+        </File>
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg %n" />
         </Console>
     </Appenders>
     <Loggers>
         <Root level="info">
+            <AppenderRef ref="File" />
             <AppenderRef ref="Console" />
         </Root>
     </Loggers>
 </Configuration>
 ```
+
+Na classe `main`, podemos testar o log4j, verificando se o arquivo será criado ou o console irá mostrar os registros de log.
+
+```Java
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static Logger logger = LogManager.getLogger(Main.class);
+    public static void main(String[] args){
+        try{
+            logger.info("Sistema iniciando...");
+
+            var scanner = new Scanner(System.in);
+            System.out.println("Digite um numero:");
+            int numero = scanner.nextInt();
+        }
+        catch (Exception e){
+            logger.fatal("Erro fatal: " + e.getMessage() + " - " +
+                    Arrays.toString(e.getStackTrace()));
+        }
+    }
+}
+```
+
+![logfile.png](logfile.png)
 
 ## Etapa 2: Implementando Logging com Interfaces e Generics
 
