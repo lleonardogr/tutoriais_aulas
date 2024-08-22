@@ -5,13 +5,13 @@ Este guia oferece uma visão passo a passo sobre como realizar operações bási
 
 ## Sumário
 
-1. [Operações Simples de IO](#operações-simples-de-io)
+1. [Operações Simples de IO](#opera-es-simples-de-io)
     - [Escrita em Arquivo TXT](#escrita-em-arquivo-txt)
     - [Leitura de Arquivo TXT](#leitura-de-arquivo-txt)
 2. [Trabalhando com Arquivos Grandes](#trabalhando-com-arquivos-grandes)
     - [Escrita de Arquivos Grandes com Buffer](#escrita-de-arquivos-grandes-com-buffer)
     - [Escrita em Modo Append](#escrita-em-modo-append)
-3. [Manipulação de Arquivos JSON](#manipulação-de-arquivos-json)
+3. [Manipulação de Arquivos JSON](#manipula-o-de-arquivos-json)
     - [Escrita de JSON em Arquivo](#escrita-de-json-em-arquivo)
     - [Leitura de JSON de Arquivo](#leitura-de-json-de-arquivo)
     - [Escrita em Modo Append em JSON](#escrita-em-modo-append-em-json)
@@ -24,7 +24,7 @@ Este guia oferece uma visão passo a passo sobre como realizar operações bási
 
 Para escrever dados em um arquivo de texto, usamos as classes `FileWriter` e `BufferedWriter`. 
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_1"}
 
 ```java
 import java.io.BufferedWriter;
@@ -46,7 +46,7 @@ public class ExportarArquivo {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_1"}
 
 - **FileWriter:** Escreve dados no arquivo.
 - **BufferedWriter:** Melhora a performance ao armazenar temporariamente os dados antes de gravá-los.
@@ -55,7 +55,7 @@ public class ExportarArquivo {
 
 Para ler o conteúdo de um arquivo de texto, utilizamos `FileReader` e `BufferedReader`.
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_2"}
 
 ```java
 import java.io.BufferedReader;
@@ -78,7 +78,7 @@ public class LerArquivo {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_2"}
 
 - **FileReader:** Lê o arquivo.
 - **BufferedReader:** Envolve o `FileReader` para leitura eficiente.
@@ -89,7 +89,7 @@ public class LerArquivo {
 
 Para escrever arquivos grandes eficientemente, podemos usar `StringBuilder` para construir o conteúdo e `BufferedWriter` para escrevê-lo.
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_3"}
 
 ```java
 import java.io.BufferedWriter;
@@ -115,7 +115,7 @@ public class EscreverArquivoGrande {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_3"}
 
 - **StringBuilder:** Eficiência na construção de grandes strings.
 - **BufferedWriter:** Grava os dados de forma eficiente usando um buffer.
@@ -124,7 +124,7 @@ public class EscreverArquivoGrande {
 
 Para adicionar conteúdo a um arquivo existente sem sobrescrever o conteúdo anterior, use `FileWriter` no modo append.
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_4"}
 
 ```java
 import java.io.BufferedWriter;
@@ -146,7 +146,7 @@ public class AppendArquivo {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_4"}
 
 - **Modo append:** O parâmetro `true` no `FileWriter` permite adicionar dados ao final do arquivo.
 
@@ -172,7 +172,7 @@ Primeiro, adicione a dependência Gson ao seu `pom.xml` se você estiver usando 
 
 Usamos a biblioteca **Gson** para converter objetos Java em JSON e escrevê-los em arquivos.
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_5"}
 
 ```java
 import com.google.gson.Gson;
@@ -211,7 +211,7 @@ public class EscritaJson {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_5"}
 
 - **Gson:** Facilita a conversão de objetos Java para JSON.
 - **setPrettyPrinting:** Gera JSON formatado de maneira legível.
@@ -220,7 +220,7 @@ public class EscritaJson {
 
 Podemos ler um arquivo JSON e convertê-lo de volta em um objeto Java.
 
-#### Exemplo:
+#### Exemplo: {id="exemplo_6"}
 
 ```java
 import com.google.gson.Gson;
@@ -243,7 +243,7 @@ public class LeituraJson {
 }
 ```
 
-#### Explicação:
+#### Explicação: {id="explica-o_6"}
 
 - **fromJson:** Converte JSON de volta para um objeto Java.
 
