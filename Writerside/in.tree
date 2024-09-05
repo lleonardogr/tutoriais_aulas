@@ -38,6 +38,10 @@
         <toc-element topic="web_scraping_csharp_guide.md"/>
     </toc-element>
     <toc-element toc-title="ABD - Segundo Semestre">
+        <toc-element topic="IntroducaoMinimalAPI.md"/>
+        <toc-element topic="OpenAPIeSwaggerMinimalAPI.md"/>
     </toc-element>
+
+
 
 </instance-profile>

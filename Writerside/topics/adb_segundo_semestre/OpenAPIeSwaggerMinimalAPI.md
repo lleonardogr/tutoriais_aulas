@@ -16,7 +16,7 @@ dotnet add package Swashbuckle.AspNetCore
 
 **Configurar Swagger no Program.cs**: Adicione a configuração do Swagger no pipeline de serviços e no middleware.
 
-```csharp
+```C#
 var builder = WebApplication.CreateBuilder(args);
 
 // Adiciona serviços ao contêiner.
@@ -43,7 +43,7 @@ app.Run();
 
 **Configurar opções do Swagger**: Personalize a documentação gerada adicionando informações sobre o título, descrição e versão da API.
 
-```csharp
+```C#
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -60,22 +60,22 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 ```
-**Configurar exemplos e modelos**: Forneça exemplos de requisições e respostas para melhorar a documentação.
+**Configurar exemplos e modelos**: forneça exemplos de requisições e respostas para melhorar a documentação.
 
-```csharp
+```C#
 options.ExampleFilters();
 ```
 
 ## 4. Uso do Swagger UI:
 
-**Acesso à UI**: Quando o Swagger UI é configurado, ele está disponível em http://localhost:<port>/swagger por padrão. Você pode visualizar e testar a API diretamente na interface web.
+**Acesso à UI**: Quando o Swagger UI é configurado, ele está disponível em localhost:port/swagger por padrão. Você pode visualizar e testar a API diretamente na interface web.
 
 **Testar Endpoints**: Utilize a interface interativa para enviar solicitações aos endpoints da API e ver as respostas diretamente no navegador.
 
 ## 5. Gerar Documentação OpenAPI:
 
 **Gerar e Exportar Especificação**: Swagger gera uma especificação OpenAPI que pode ser exportada em formatos como JSON ou YAML.
-A URL para a especificação JSON geralmente é http://localhost:<port>/swagger/v1/swagger.json.
+A URL para a especificação JSON geralmente é localhost:port/swagger/v1/swagger.json.
 
 **Integrar com Ferramentas**: Use ferramentas como Swagger Editor ou SwaggerHub para editar e compartilhar a especificação OpenAPI.
 
@@ -85,3 +85,9 @@ A URL para a especificação JSON geralmente é http://localhost:<port>/swagger/
 
 **Testes Interativos**: Capacidade de testar a API diretamente na UI do Swagger.
 Facilidade de Integração: Integração com outras ferramentas e serviços baseados na especificação OpenAPI.
+
+<seealso>
+    <category ref="wrs">
+        <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi" />
+    </category>
+</seealso>

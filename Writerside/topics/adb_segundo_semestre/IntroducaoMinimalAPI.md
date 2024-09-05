@@ -1,5 +1,4 @@
 # Introdução Minimal API
-_Last modified: 05 Setembro 2024_
 
 Minimal API é um estilo de construção de APIs que visa simplificar o processo de criação de aplicações web, especialmente em termos de estrutura e configuração. O termo ganhou destaque no contexto do .NET, mais especificamente no ASP.NET Core 6.0 e versões posteriores, onde a Microsoft introduziu o conceito de Minimal APIs.
 
@@ -56,7 +55,7 @@ Para criar um projeto Minimal API no .NET 8, você precisará cumprir alguns pr�
 
 Vamos agora explorar o arquivo `Program.cs`, onde os diversos componentes da sua Minimal API se integram. Esse arquivo é responsável por orquestrar a configuração dos serviços e a definição dos endpoints da API.
 
-```csharp
+```C#
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -145,7 +144,7 @@ app.Run();
 
 O código a seguir demonstra uma classe chamada `BookService`, responsável por gerenciar uma coleção de livros, enquanto a interface `IBookService` define o contrato para interação com esse serviço. Este é um exemplo simples de um serviço que executa operações CRUD em uma coleção de livros.
 
-```csharp
+```C#
 using System.Collections.Generic;
 using System.Linq;
 
@@ -237,7 +236,7 @@ namespace MinimalApi
 - **O que é**: Limita o número de solicitações que um cliente pode fazer a uma API em um período de tempo específico.
 - **Como implementar**: Pode ser feito usando middleware ou bibliotecas como AspNetCoreRateLimit. Configura-se o limite de requisições no `Startup.cs` ou `Program.cs`.
 
-```csharp
+```C#
 builder.Services.AddMemoryCache();
 builder.Services.AddInMemoryRateLimiting();
 builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
@@ -247,10 +246,10 @@ builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>()
 - **O que é**: Tratamento de exceções e envio de mensagens de erro apropriadas para os clientes.
 - **Como implementar**: Pode ser feito através de middleware de tratamento de erros.
 
-```csharp
+```C#
 app.UseExceptionHandler("/error");
 ```
-```csharp
+```C#
 app.Map("/error", (HttpContext httpContext) =>
 {
     var exception = httpContext.Features.Get<IExceptionHandlerFeature>();
@@ -262,11 +261,11 @@ app.Map("/error", (HttpContext httpContext) =>
 - **O que é**: Armazenamento de dados temporários para reduzir a carga em recursos e melhorar o desempenho.
 - **Como implementar**: Usando middleware de cache ou serviços de cache como Redis ou Memcached.
 
-```csharp
+```C#
 builder.Services.AddResponseCaching();
 app.UseResponseCaching();
 ```
-```csharp
+```C#
 app.MapGet("/books", async (IBookService bookService, HttpContext httpContext) =>
 {
     var cacheKey = "allBooks";
@@ -285,7 +284,7 @@ app.MapGet("/books", async (IBookService bookService, HttpContext httpContext) =
 - **O que é**: Compressão dos dados de solicitação e resposta para reduzir o uso de largura de banda e melhorar o desempenho.
 - **Como implementar**: Usando middleware de compressão.
 
-```csharp
+```C#
 builder.Services.AddResponseCompression(options =>
 {
     options.EnableForHttps = true;
@@ -297,7 +296,7 @@ app.UseResponseCompression();
 - **O que é**: Controle de acesso à API, garantindo que apenas usuários autenticados e autorizados possam acessar certos recursos.
 - **Como implementar**: Usando middleware de autenticação e autorização, e configurando esquemas de autenticação (e.g., JWT).
 
-```csharp
+```C#
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -367,3 +366,9 @@ app.UseAuthorization();
 15. **Authentication and Authorization**:
     - Controle de acesso à API usando middleware de autenticação e autorização, e configuração de esquemas de autenticação (e.g., JWT).
 
+<seealso>
+    <category ref="wrs">
+        <a href="https://medium.com/@alibenchaabene/minimal-api-in-net-8-a-simplfied-approach-to-build-web-apis-6b772059f17c" />
+        <a href="https://learn.microsoft.com/pt-br/aspnet/core/performance/rate-limit?view=aspnetcore-8.0" />
+    </category>
+</seealso>
