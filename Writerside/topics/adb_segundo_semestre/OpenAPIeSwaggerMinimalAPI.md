@@ -79,7 +79,69 @@ A URL para a especificação JSON geralmente é localhost:port/swagger/v1/swagge
 
 **Integrar com Ferramentas**: Use ferramentas como Swagger Editor ou SwaggerHub para editar e compartilhar a especificação OpenAPI.
 
-## 6. Benefícios da Integração com OpenAPI e Swagger:
+## 6. Personalização da Documentação Swagger:
+
+### 6.1 Remover Endpoint da Definição Swagger:
+
+Para excluir um endpoint da definição do Swagger, é necessário utilizar a extensão ExcludeFromDescription no método do endpoint:
+
+```C#
+app.MapGet("/remover-da-doc", () => "Este endpoint não aparecerá na documentação.").ExcludeFromDescription();
+```
+
+### 6.2 Marcar Endpoint como Obsoleto:
+
+Para marcar um endpoint como obsoleto no Swagger, utilize o atributo Deprecated nas opções da rota:
+
+```C#
+pp.MapGet("/rota-obsoleta", () => "Esta rota é obsoleta.").WithOpenApi(operation => new(operation)
+    {
+        Deprecated = true
+    })
+```
+
+### 6.3 Adicionar Descrição das Rotas e Retornos:
+
+Para adicionar descrições detalhadas de rotas e seus retornos no Swagger, você pode usar o método WithMetadata() e fornecer informações adicionais:
+
+```C#
+app.MapGet("/descricao", () => "Exemplo de descrição.")
+    .WithName("DescriçãoExemplo")
+    .WithMetadata(new SwaggerOperationAttribute(summary: "Resumo da operação", description: "Descrição detalhada da rota e seu retorno."));
+```
+
+### 6.4 Colocar Informações Básicas da API no Swagger UI (Contato, Website):
+
+Para incluir informações básicas da API, como nome de contato e website, configure o Swagger no Program.cs conforme o exemplo:
+
+```C#
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Minha API",
+        Version = "v1",
+        Description = "Uma descrição detalhada da minha API",
+        Contact = new OpenApiContact
+        {
+            Name = "Nome do Projeto",
+            Email = "contato@example.com",
+            Url = new Uri("https://www.example.com")
+        }
+    });
+});
+```
+
+### 6.5 Adicionar Tags às Rotas:
+
+As tags podem ser adicionadas para agrupar endpoints e melhorar a organização da documentação Swagger. Use a seguinte abordagem para adicionar tags às rotas:
+
+```C#
+app.MapGet("/minha-rota", () => "Conteúdo da rota.")
+    .WithTags("Grupo de Rotas 1");
+```
+
+## 7. Benefícios da Integração com OpenAPI e Swagger:
 
 **Documentação Automática**: Geração automática de documentação baseada no código.
 
@@ -88,6 +150,6 @@ Facilidade de Integração: Integração com outras ferramentas e serviços base
 
 <seealso>
     <category ref="wrs">
-        <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi" />
+        <a href="https://learn.microsoft.com/en-us/aspnet/core/fundamentals/openapi/aspnetcore-openapi"></a>
     </category>
 </seealso>

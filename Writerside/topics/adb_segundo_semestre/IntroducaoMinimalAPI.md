@@ -368,7 +368,7 @@ app.UseAuthorization();
 
 <seealso>
     <category ref="wrs">
-        <a href="https://medium.com/@alibenchaabene/minimal-api-in-net-8-a-simplfied-approach-to-build-web-apis-6b772059f17c" />
-        <a href="https://learn.microsoft.com/pt-br/aspnet/core/performance/rate-limit?view=aspnetcore-8.0" />
+        <a href="https://medium.com/@alibenchaabene/minimal-api-in-net-8-a-simplfied-approach-to-build-web-apis-6b772059f17c"></a>
+        <a href="https://learn.microsoft.com/pt-br/aspnet/core/performance/rate-limit?view=aspnetcore-8.0"></a>
     </category>
 </seealso>
