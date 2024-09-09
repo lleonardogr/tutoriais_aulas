@@ -100,6 +100,8 @@ pp.MapGet("/rota-obsoleta", () => "Esta rota é obsoleta.").WithOpenApi(operatio
     })
 ```
 
+![swagger_obsolete.png](swagger_obsolete.png)
+
 ### 6.3 Adicionar Descrição das Rotas e Retornos:
 
 Para adicionar descrições detalhadas de rotas e seus retornos no Swagger, você pode usar o método WithMetadata() e fornecer informações adicionais:
