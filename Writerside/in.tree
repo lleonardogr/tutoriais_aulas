@@ -18,6 +18,9 @@
         <toc-element topic="introducao_oo.md"/>
         <toc-element topic="classes.md"/>
         <toc-element topic="abstracao.md"/>
+        <toc-element topic="OO-Herança.md"/>
+        <toc-element topic="OO-Polimorfismo.md"/>
+        <toc-element topic="POJOS.md"/>
     </toc-element>
     <toc-element toc-title="DDD - Segundo Semestre">
         <toc-element topic="interfaces-Java.md"/>
