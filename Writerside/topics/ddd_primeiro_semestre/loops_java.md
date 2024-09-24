@@ -1,5 +1,5 @@
 
-# Iteradores (loops)
+# Sintaxe: Iteradores (loops)
 
 Loops são uma estrutura fundamental em qualquer linguagem de programação, permitindo a execução repetida de um bloco de código enquanto uma condição específica for verdadeira. Em Java, temos vários tipos de loops: `while`, `do-while`, `for`, e mais recentemente, expressões lambdas para manipulações mais funcionais.
 

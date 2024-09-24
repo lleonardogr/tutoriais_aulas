@@ -1,4 +1,4 @@
-# Escrevendo e lendo informações
+# Sintaxe: Escrevendo e lendo informações
 
 Os tutoriais são artigos orientados para aprendizado que ajudam os usuários a passar por um processo e alcançar um resultado final. 
 Comece com uma introdução: para quem é este tutorial e o que o leitor irá alcançar ao lê-lo.

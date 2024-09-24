@@ -1,4 +1,4 @@
-# Variáveis e tipos primitivos
+# Sintaxe: Variáveis e tipos primitivos
 
 Este tutorial fornece uma visão geral de como as variáveis funcionam em Java, os tipos primitivos disponíveis e como armazená-los usando o Scanner.
 

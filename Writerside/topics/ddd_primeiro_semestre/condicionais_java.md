@@ -1,5 +1,5 @@
 
-# Condicionais em Java e Operadores Ternários
+# Sintaxe: Condicionais em Java e Operadores Ternários
 
 ## Introdução
 
