@@ -41,6 +41,7 @@
         <toc-element topic="primeiro_app_console.md"/>
         <toc-element topic="web_scraping_csharp_guide.md"/>
         <toc-element topic="Guia-de-Introdução-ao-ASP-NET-Core-MVC.md"/>
+        <toc-element topic="ASP-NET-Core-MVC-Partial-Views.md"/>
     </toc-element>
     <toc-element toc-title="ABD - Segundo Semestre">
         <toc-element topic="IntroducaoMinimalAPI.md"/>
