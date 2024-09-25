@@ -7,7 +7,7 @@ Neste tutorial, vamos explorar os conceitos de Domain-Driven Design (DDD) focand
 
 ## O que é DDD?
 
-Domain-Driven Design é uma abordagem para o desenvolvimento de software centrada no domínio e na lógica do negócio. Ela propõe a modelagem baseada no domínio real para o qual o software está sendo desenvolvido.
+Domain-Driven Design é uma abordagem para o desenvolvimento de software centrada no domínio e na lógica do negócio. Ela propõe a modelagem baseada no domínio real para o qual o software está sendo desenvolvido..
 
 ### Entidades (Entities) em DDD
 
