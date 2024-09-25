@@ -403,5 +403,3 @@ A Stream API é uma ferramenta poderosa que permite processar coleções de dado
 - Pratique escrevendo código com Streams para se familiarizar com as operações.
 - Lembre-se de que nem todas as operações precisam ser feitas com Streams; escolha a abordagem que torna o código mais claro.
 - Esteja atento ao desempenho e à legibilidade do código ao usar Streams.
-
-Espero que este guia tenha esclarecido o funcionamento da Stream API em Java e como manipular listas e arrays de forma eficiente e elegante.
