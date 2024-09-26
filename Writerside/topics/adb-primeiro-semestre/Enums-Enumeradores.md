@@ -519,18 +519,19 @@ Compreender e utilizar Enums efetivamente pode melhorar significativamente a qua
 
 ---
 
-## Referências
-
-- **Documentação Oficial**: [Enum Types](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
-- **Effective Java**, Joshua Bloch: Capítulo sobre Enums e Anotações.
-- **Java Language Specification**: [Enums](https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9)
-
----
-
 ## Observações Finais
 
 - **Prática**: Experimente criar seus próprios Enums e utilizar as funcionalidades avançadas.
 - **Leitura Adicional**: Estude como Enums podem interagir com outras partes do Java, como anotações e coleções.
 - **Comunidade**: Participe de fóruns e grupos de discussão para compartilhar conhecimentos e tirar dúvidas.
 
-Espero que este guia tenha esclarecido o uso de Enumeradores em Java e como aplicá-los em seus projetos!
+---
+
+<seealso>
+<category ref="wrs">
+<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html"/>
+<a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html#jls-8.9"/>
+</category>
+</seealso>
+
+

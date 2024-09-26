@@ -21,6 +21,8 @@
         <toc-element topic="OO-Herança.md"/>
         <toc-element topic="OO-Polimorfismo.md"/>
         <toc-element topic="POJOS.md"/>
+        <toc-element topic="OO-Classes-Abstratas.md"/>
+        <toc-element topic="Enums-Enumeradores.md"/>
         <toc-element topic="stream-api.md"/>
     </toc-element>
     <toc-element toc-title="DDD - Segundo Semestre">

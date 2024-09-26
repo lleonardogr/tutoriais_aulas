@@ -89,7 +89,7 @@ Você pode passar um modelo para a Partial View da mesma forma que faz com uma v
 
 **Exemplo**: Passando um objeto `Usuario` para a Partial View.
 
-```csharp
+```C#
 // Modelo Usuario
 public class Usuario
 {
@@ -180,7 +180,7 @@ Partial Views são especialmente úteis quando combinadas com AJAX para atualiza
 
 ### Passo 2: Criar a Action no Controller que Retorna a Partial View
 
-```csharp
+```C#
 public class PostsController : Controller
 {
     private readonly MeuDbContext _context;
