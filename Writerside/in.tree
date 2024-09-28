@@ -25,6 +25,7 @@
         <toc-element topic="Enums-Enumeradores.md"/>
         <toc-element topic="stream-api.md"/>
     </toc-element>
+    <toc-element topic="Resumo-das-apresentações.md"/>
     <toc-element toc-title="DDD - Segundo Semestre">
         <toc-element topic="interfaces-Java.md"/>
         <toc-element topic="generics-java.md"/>
