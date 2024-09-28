@@ -1,3 +1,0 @@
-# Resumo-das-apresentações
-
-Start typing here...
