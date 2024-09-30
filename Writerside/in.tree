@@ -37,7 +37,9 @@
         <toc-element topic="CORS-usando-JAX-RS.md"/>
         <toc-element topic="ddd.md"/>
         <toc-element topic="clean-code.md"/>
-        <toc-element topic="enterprise-app-infrastructure.md"/>
+        <toc-element topic="enterprise-app-infrastructure.md">
+        </toc-element>
+        <toc-element topic="Boas-praticas-Anotações.md"/>
     </toc-element>
     <toc-element toc-title="ABD - Primeiro Semestre">
         <toc-element topic="instalando_visual_studio_rider.md"/>
