@@ -34,6 +34,7 @@
         <toc-element topic="tutorial-crud-completo.md"/>
         <toc-element topic="introducao-jaxrs.md"/>
         <toc-element topic="tutorial-jax-rs.md" />
+        <toc-element topic="CORS-usando-JAX-RS.md"/>
         <toc-element topic="ddd.md"/>
         <toc-element topic="clean-code.md"/>
         <toc-element topic="enterprise-app-infrastructure.md"/>

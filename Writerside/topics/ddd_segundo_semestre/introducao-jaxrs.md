@@ -1,4 +1,4 @@
-# Introdução a JAX-RS com GRIZZLY
+# JAX-RS: Introdução
 
 No JAX-RS (Java API for RESTful Web Services), um "resource" é um componente chave que é modelado para corresponder a um recurso no mundo real que pode ser manipulado via HTTP. Aqui está o passo a passo para entender como um recurso funciona no JAX-RS:
 

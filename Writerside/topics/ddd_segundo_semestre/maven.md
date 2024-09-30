@@ -1,5 +1,4 @@
-
-# Projeto Maven e Maven Repository: Guia para Iniciantes
+# Maven: Introdução
 
 ## O que é Maven?
 

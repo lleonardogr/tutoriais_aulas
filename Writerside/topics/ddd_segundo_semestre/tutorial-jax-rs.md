@@ -1,4 +1,4 @@
-# Resolução: API REST com JAX-RS e Grizzly
+# JAX-RS: Tutorial
 
 ## 1. Configuração Inicial:
 ### Criando o Projeto Maven:

@@ -1,4 +1,4 @@
-# Implementação de CRUD em Java Console Usando JDBC para Oracle
+# JDBC: Tutorial
 
 ## Dependências
 
