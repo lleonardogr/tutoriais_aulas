@@ -7,7 +7,7 @@ No desenvolvimento de aplicações web, frequentemente precisamos que um fronten
 Este guia irá explicar:
 
 - O que é CORS e como funciona.
-- Como habilitar CORS em aplicações JAX-RS.
+- Como habilitar CORS em aplicações JAX-RS usando **Jakarta EE** (pacotes `jakarta.ws.rs`).
 - Como configurar e responder às requisições **OPTIONS** que os navegadores enviam durante uma solicitação CORS.
 
 ---
@@ -33,21 +33,21 @@ Existem dois tipos principais de requisições CORS:
 
 ---
 
-## Habilitando CORS em JAX-RS
+## Habilitando CORS em JAX-RS com Jakarta EE
 
 Para permitir que seu serviço JAX-RS responda a requisições CORS, você precisa configurar seu aplicativo para adicionar os cabeçalhos CORS apropriados nas respostas.
 
-### Método 1: Usando um Filtro ContainerResponseFilter
+### Método 1: Usando um Filtro `ContainerResponseFilter`
 
 Uma maneira eficaz de habilitar CORS em JAX-RS é criando um filtro que intercepta as respostas e adiciona os cabeçalhos necessários.
 
 #### Passo 1: Criar o Filtro CORS
 
 ```java
-import javax.ws.rs.container.ContainerResponseFilter;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.ext.Provider;
+import jakarta.ws.rs.container.ContainerResponseFilter;
+import jakarta.ws.rs.container.ContainerRequestContext;
+import jakarta.ws.rs.container.ContainerResponseContext;
+import jakarta.ws.rs.ext.Provider;
 import java.io.IOException;
 
 @Provider
@@ -80,8 +80,8 @@ Dependendo da forma como você está configurando seu aplicativo JAX-RS, você p
 **Usando Application Subclass:**
 
 ```java
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 import java.util.Set;
 import java.util.HashSet;
 
@@ -106,10 +106,10 @@ Se você estiver usando um framework que detecta automaticamente as classes com 
 Você também pode adicionar os cabeçalhos CORS diretamente nas respostas dos recursos, mas isso é menos recomendado devido à repetição.
 
 ```java
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.ResponseBuilder;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.ResponseBuilder;
 
 @Path("/usuarios")
 public class UsuarioResource {
@@ -165,12 +165,12 @@ Para responder corretamente às requisições OPTIONS, você precisa garantir qu
 Modifique o filtro para verificar se a requisição é do método OPTIONS e ajustar a resposta.
 
 ```java
-import javax.ws.rs.container.ContainerResponseFilter;
-import javax.ws.rs.container.ContainerRequestFilter;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.Provider;
+import jakarta.ws.rs.container.ContainerResponseFilter;
+import jakarta.ws.rs.container.ContainerRequestFilter;
+import jakarta.ws.rs.container.ContainerRequestContext;
+import jakarta.ws.rs.container.ContainerResponseContext;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.ext.Provider;
 import java.io.IOException;
 
 @Provider
@@ -208,9 +208,9 @@ public class CorsFilter implements ContainerRequestFilter, ContainerResponseFilt
 Você pode adicionar um método em seus recursos para lidar com o método OPTIONS.
 
 ```java
-import javax.ws.rs.OPTIONS;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.OPTIONS;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
 
 @Path("/usuarios")
 public class UsuarioResource {
@@ -253,12 +253,12 @@ Vamos reunir tudo em um exemplo completo.
 ```java
 package com.exemplo;
 
-import javax.ws.rs.container.ContainerResponseFilter;
-import javax.ws.rs.container.ContainerRequestFilter;
-import javax.ws.rs.container.ContainerRequestContext;
-import javax.ws.rs.container.ContainerResponseContext;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.Provider;
+import jakarta.ws.rs.container.ContainerResponseFilter;
+import jakarta.ws.rs.container.ContainerRequestFilter;
+import jakarta.ws.rs.container.ContainerRequestContext;
+import jakarta.ws.rs.container.ContainerResponseContext;
+import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.ext.Provider;
 import java.io.IOException;
 
 @Provider
@@ -293,8 +293,8 @@ public class CorsFilter implements ContainerRequestFilter, ContainerResponseFilt
 ```java
 package com.exemplo;
 
-import javax.ws.rs.ApplicationPath;
-import javax.ws.rs.core.Application;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 
 @ApplicationPath("api")
 public class ApplicationConfig extends Application {
@@ -307,9 +307,9 @@ public class ApplicationConfig extends Application {
 ```java
 package com.exemplo.resources;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.core.Response;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
 
 @Path("/usuarios")
 public class UsuarioResource {
@@ -328,7 +328,7 @@ public class UsuarioResource {
 
 Para verificar se o CORS está configurado corretamente:
 
-1. **Inicie o Servidor**: Execute sua aplicação em um servidor (por exemplo, Apache Tomcat, GlassFish, etc.).
+1. **Inicie o Servidor**: Execute sua aplicação em um servidor compatível com Jakarta EE (por exemplo, Payara, WildFly, TomEE).
 2. **Faça uma Requisição de Outro Domínio**: Use uma ferramenta como o `curl` ou um frontend hospedado em outro domínio para fazer uma requisição ao seu serviço.
 
 **Exemplo de Requisição OPTIONS com `curl`:**
@@ -400,7 +400,7 @@ Existem bibliotecas que facilitam a configuração do CORS, como:
 
 Alguns frameworks JAX-RS oferecem anotações ou configurações para habilitar CORS de forma mais simples.
 
-**Exemplo com Jersey:**
+**Exemplo com Jersey (usando Jakarta EE):**
 
 ```java
 import org.glassfish.jersey.server.ResourceConfig;
@@ -419,7 +419,7 @@ public class ApplicationConfig extends ResourceConfig {
 ## Resumo
 
 - **CORS** é essencial para permitir que aplicações frontend acessem APIs em domínios diferentes.
-- Em **JAX-RS**, o método mais eficaz para habilitar CORS é através de um **ContainerResponseFilter** que adiciona os cabeçalhos CORS a todas as respostas.
+- Em **JAX-RS** com Jakarta EE, o método mais eficaz para habilitar CORS é através de um **ContainerResponseFilter** que adiciona os cabeçalhos CORS a todas as respostas.
 - É importante lidar corretamente com as **requisições OPTIONS** enviadas pelos navegadores durante o preflight, adicionando os cabeçalhos necessários e retornando uma resposta adequada.
 - Sempre considere as **melhores práticas de segurança**, especificando origens permitidas e limitando métodos e cabeçalhos conforme necessário.
 
@@ -427,12 +427,30 @@ public class ApplicationConfig extends ResourceConfig {
 
 ## Exercícios Práticos
 
-1. **Implementar CORS em uma API Existente**: Pegue uma API JAX-RS que você já tenha e habilite o CORS usando um filtro.
+1. **Implementar CORS em uma API Existente**: Pegue uma API JAX-RS com Jakarta EE que você já tenha e habilite o CORS usando um filtro.
 2. **Especificar Origens Permitidas**: Modifique o filtro para permitir apenas determinadas origens, e teste o acesso a partir de origens permitidas e não permitidas.
 3. **Suportar Credenciais**: Configure o CORS para permitir o envio de credenciais (cookies, autenticação HTTP), ajustando os cabeçalhos adequadamente.
-4. **Usar um Framework**: Se estiver usando um framework como o Spring Boot, explore como habilitar CORS usando as ferramentas fornecidas pelo framework.
+4. **Usar um Framework**: Se estiver usando um framework como o Spring Boot com suporte a Jakarta EE, explore como habilitar CORS usando as ferramentas fornecidas pelo framework.
 
 ---
+
+## Conclusão
+
+Habilitar CORS em aplicações JAX-RS usando Jakarta EE é um passo essencial para permitir que aplicações frontend interajam com suas APIs de forma segura e eficaz. Compreender como o CORS funciona e como configurá-lo corretamente garante que sua aplicação seja acessível e mantenha práticas de segurança adequadas.
+
+Espero que este guia tenha esclarecido como habilitar e configurar o CORS em suas aplicações JAX-RS usando Jakarta EE e como lidar com as requisições OPTIONS que os navegadores enviam durante as interações CORS.
+
+---
+
+## Observações Finais
+
+- **Transição de javax.* para jakarta.***: Com a evolução do Java EE para Jakarta EE, os pacotes mudaram de `javax.*` para `jakarta.*`. É importante atualizar as dependências e importações ao migrar sua aplicação.
+- **Compatibilidade**: Certifique-se de que seu servidor de aplicação é compatível com Jakarta EE 9 ou superior para utilizar os pacotes `jakarta.*`.
+- **Atualização de Dependências**: Verifique as versões de suas bibliotecas (como Jersey, RESTEasy, etc.) para garantir compatibilidade com Jakarta EE.
+
+---
+
+**Nota:** Este guia foi atualizado para utilizar os pacotes `jakarta.ws.rs` conforme solicitado.
 
 ## Recursos Adicionais
 
