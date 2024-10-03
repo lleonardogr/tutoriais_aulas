@@ -54,6 +54,7 @@
         <toc-element topic="Indepotencia.md"/>
         <toc-element topic="Implementando-JWT-em-uma-Minimal-API-com-ASP-NET-Core.md"/>
         <toc-element topic="Testes-com-Xunit.md"/>
+        <toc-element topic="XUnit-com-minimal-API-s.md"/>
     </toc-element>
 
 
