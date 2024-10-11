@@ -1,0 +1,3 @@
+# Sintaxe: Strings
+
+Start typing here...
