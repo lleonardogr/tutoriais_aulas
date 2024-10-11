@@ -8,6 +8,7 @@
 
     <toc-element topic="getting_started.md"/>
     <toc-element toc-title="DDD - Primeiro Semestre">
+        <toc-element topic="Sintaxe-Strings.md"/>
         <toc-element topic="Java-Overview.md"/>
         <toc-element topic="introducao_ao_intellij.md"/>
         <toc-element topic="criar_seu_primeiro_app_java.md"/>
@@ -44,6 +45,8 @@
     <toc-element toc-title="ABD - Primeiro Semestre">
         <toc-element topic="instalando_visual_studio_rider.md"/>
         <toc-element topic="primeiro_app_console.md"/>
+        <toc-element topic="C-Sintaxe.md"/>
+        <toc-element topic="C-OO.md"/>
         <toc-element topic="web_scraping_csharp_guide.md"/>
         <toc-element topic="Guia-de-Introdução-ao-ASP-NET-Core-MVC.md"/>
         <toc-element topic="ASP-NET-Core-MVC-Partial-Views.md"/>
