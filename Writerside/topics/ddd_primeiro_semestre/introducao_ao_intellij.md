@@ -7,7 +7,7 @@ Neste tutorial, vamos aprender como baixar o IntelliJ Ultimate ou Community Edit
 ### Passo 1: Acessar o site do IntelliJ
 
 Primeiro, acesse o site oficial do IntelliJ em [https://www.jetbrains.com/pt-br/idea/](https://www.jetbrains.com/pt-br/idea/)
-ou pelo toolbox [https://www.jetbrains.com/toolbox-app/](https://www.jetbrains.com/toolbox-app/), recomende-se pelo toolbox para facilitar instalação ![intellij-toolbox](../../images/intellij-toolbox.png)
+ou pelo toolbox [https://www.jetbrains.com/toolbox-app/](https://www.jetbrains.com/toolbox-app/), recomende-se pelo toolbox para facilitar instalação !![intellij-toolbox.png](intellij-toolbox.png)
 
 ### Passo 2: Escolher a edição
 
