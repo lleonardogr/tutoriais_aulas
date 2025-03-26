@@ -34,6 +34,8 @@
         <toc-element topic="log4j.md"/>
         <toc-element topic="guia_io_java.md"/>
         <toc-element topic="Consumo-de-API-s.md"/>
+        <toc-element topic="consuming-apis-with-curl.md"/>
+        <toc-element topic="intro-webservices-apis.md" />
         <toc-element topic="tutorial-crud-completo.md"/>
         <toc-element topic="introducao-jaxrs.md"/>
         <toc-element topic="tutorial-jax-rs.md" />
@@ -67,6 +69,4 @@
         <toc-element topic="XUnit-com-minimal-API-s.md"/>
         <toc-element topic="mlnet_tutorial.md"/>
     </toc-element>
-
-
 </instance-profile>
