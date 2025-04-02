@@ -63,9 +63,12 @@
         <toc-element topic="OpenAPIeSwaggerMinimalAPI.md" hidden="true"/>
         <toc-element topic="OpenAPIeSwaggerMinimalAPI_net9.md"/>
         <toc-element topic="Indepotencia.md"/>
+        <toc-element topic="rate-limiting-minimal-api-csharp.md"/>
         <toc-element topic="Implementando-JWT-em-uma-Minimal-API-com-ASP-NET-Core.md"/>
         <toc-element topic="Testes-com-Xunit.md"/>
         <toc-element topic="XUnit-com-minimal-API-s.md"/>
         <toc-element topic="mlnet_tutorial.md"/>
     </toc-element>
+    <toc-element topic="health-checks-minimal-api-csharp.md"/>
+
 </instance-profile>
