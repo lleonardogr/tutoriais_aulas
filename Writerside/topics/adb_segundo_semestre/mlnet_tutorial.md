@@ -18,7 +18,7 @@
 
 #### Via **Package Manager Console**:
 
-```powershell
+```bash
 Install-Package Microsoft.ML
 ```
 
