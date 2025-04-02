@@ -68,19 +68,12 @@
             <links>
                 <group>
                     <title>Outros links (Documentação microsoft)</title>
-                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/tutorials/min-web-api?view=aspnetcore-9.0&amp;tabs=visual-studio">Introdução a minimal API</a>
-                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/handle-errors?view=aspnetcore-9.0">Tratamentos de erros de minimal API's</a>
-                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0&amp;tabs=visual-studio">Gerar documentos Open API</a>
-                    <a href="https://www.roundthecode.com/dotnet-blog/swagger-dropped-dotnet-9-what-are-alternatives">Scalar: Swagger alternative</a>
-                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/openapi/include-metadata?view=aspnetcore-9.0&amp;tabs=minimal-apis">Metadados de Open API no minimal API</a>
-                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/security?view=aspnetcore-9.0">Seguranaça em Minimal API's</a>
-                </group>
-                <group>
-                    <title>Two in a row</title>
-                    <a href=""/>
-                    <a href="" summary="With a custom card summary"/>
-                    <a href="">Custom card title</a>
-                    <a href="" summary="With a custom card summary">Custom card title</a>
+<!--                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/tutorials/min-web-api?view=aspnetcore-9.0&amp;tabs=visual-studio">Introdução a minimal API</a>-->
+<!--                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/handle-errors?view=aspnetcore-9.0">Tratamentos de erros de minimal API's</a>-->
+<!--                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/openapi/aspnetcore-openapi?view=aspnetcore-9.0&amp;tabs=visual-studio">Gerar documentos Open API</a>-->
+<!--                    <a href="https://www.roundthecode.com/dotnet-blog/swagger-dropped-dotnet-9-what-are-alternatives">Scalar: Swagger alternative</a>-->
+<!--                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/openapi/include-metadata?view=aspnetcore-9.0&amp;tabs=minimal-apis">Metadados de Open API no minimal API</a>-->
+<!--                    <a href="https://learn.microsoft.com/pt-br/aspnet/core/fundamentals/minimal-apis/security?view=aspnetcore-9.0">Seguranaça em Minimal API's</a>-->
                 </group>
             </links>
         </misc>
