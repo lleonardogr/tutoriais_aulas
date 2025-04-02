@@ -1,11 +1,33 @@
-# JAX-RS: Tutorial
+# JAX-RS com Quarkus: Tutorial
 
 ## 1. Configuração Inicial:
 ### Criando o Projeto Maven:
 
-No intelij, selecione um novo projeto, escoha o tipo Maven Arquetype, o catalogo Maven Central e o Arquetipo: org.glassfish.jersey.archetypes:jersey-quickstart-grizzly2
+Acesse o site [Quarkus](https://code.quarkus.io/) e crie um projeto Maven com a dependencia Quarkus-REST:
 
-![jax_rs_template.png](jax_rs_template.png)
+![code-quarkus.png](code-quarkus.png)
+
+Selecione REST Service e clique em "Generate your application".
+Baixe o arquivo zip e extraia-o.
+
+[//]: # (![jax_rs_template.png]&#40;jax_rs_template.png&#41;)
+
+## Plugins intellij (Opcional, apenas para quem usa o Intellij Community):
+Se você estiver usando o Intellij community, instale os plugins
+, caso esteja usando o Intellij Ultimate, não é necessário instalar os plugins.:
+
+![quarkus-plugins-intellij.png](quarkus-plugins-intellij.png)
+
+- Depois de instalar os plugins, reinicie o Intellij.
+- Abra o projeto que você acabou de criar.
+- Clique ao lado do botão run e clique em "Edit Configurations".
+
+![run-configurations.png](run-configurations.png)
+
+- Clique no botão "+" e selecione "Quarkus Maven".
+- Na aba Working Directory, selecione o diretório do projeto.
+- Na aba JRE, selecione a versão do Java que você está usando no projeto.
+
 
 ## Adicionar Dependência:
 No arquivo pom.xml, adicione a dependência do JDBC para Oracle, lembrem-se que outra versão pode ser baixada no link: https://mvnrepository.com
@@ -114,11 +136,13 @@ Utilizado para executar consultas SQL parametrizadas e atualizações.
 Detalhes:
 Melhora a performance e segurança em comparação com o Statement regular.
 
-```java
+```JAVA
+
 String sql = "SELECT * FROM users WHERE username = ?";
-PreparedStatement statement = connection.prepareStatement(sql);
-statement.setString(1, "alice");
+PreparedStatement stmt = connection.prepareStatement(sql);
+stmt.setString(1, "alice");
 ResultSet resultSet = statement.executeQuery();
+
 ```
 
 ### 3. executeQuery()
