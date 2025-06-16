@@ -61,7 +61,7 @@
         <toc-element topic="IntroducaoMinimalAPI.md"/>
     </toc-element>
     <toc-element toc-title="ABD - Segundo Semestre">
-        <toc-element topic="OpenAPIeSwaggerMinimalAPI.md" hidden="true"/>
+        <!--<toc-element topic="OpenAPIeSwaggerMinimalAPI.md" hidden="true"/>-->
         <toc-element topic="OpenAPIeSwaggerMinimalAPI_net9.md"/>
         <toc-element topic="Indepotencia.md"/>
         <toc-element topic="rate-limiting-minimal-api-csharp.md"/>
