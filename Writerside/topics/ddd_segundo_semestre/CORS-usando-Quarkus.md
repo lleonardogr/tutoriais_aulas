@@ -51,7 +51,7 @@ Para adicionar suporte ao CORS, inclua a extensão RESTEasy no seu projeto:
 
 O Quarkus torna a configuração do CORS simples através do arquivo `application.properties`. Adicione as seguintes linhas:
 
-```properties
+```bash
 # Habilitar CORS
 quarkus.http.cors=true
 
@@ -158,7 +158,7 @@ fetch('http://localhost:8080/api/public', {
 
 4. **Diferencie ambientes**: Use perfis do Quarkus para ter configurações distintas em desenvolvimento e produção:
 
-```properties
+```bash
 # Desenvolvimento
 %dev.quarkus.http.cors=true
 %dev.quarkus.http.cors.origins=*

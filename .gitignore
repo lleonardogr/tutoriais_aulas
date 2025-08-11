@@ -1,2 +1,27 @@
-//mac files
+// macOS system files
 .DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Icon?
+
+# Files that might appear on network shares
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Spotlight and Trash
+.Spotlight-V100
+.Trashes
+
+# AFP share caches
+.AppleShareCache
+
+# Volume root metadata files (sometimes created when archiving)
+._.DocumentRevisions-V100
+._.fseventsd
+._.VolumeIcon.icns
