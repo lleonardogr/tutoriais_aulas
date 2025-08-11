@@ -6,7 +6,7 @@ Ao chamar o endpoint `POST /todoitems/` com cabeçalho `Idempotency-Key`, a apli
 
 O filtro de idempotência serializa os parâmetros do delegate do endpoint para gerar a chave / armazenar a resposta. Como o handler tinha a assinatura:
 
-```csharp
+```c#
 (TodoModel todoModel, TodoDb db) => { ... }
 ```
 
@@ -25,7 +25,7 @@ O parâmetro `TodoDb` (DbContext do EF Core) era incluído no objeto a ser seria
 
 ## Código Principal do Handler (Após Fix)
 
-```csharp
+```c#
 todogroup.MapPost("/", async (TodoModel todoModel) =>
 {
     using var scope = app.Services.CreateScope();

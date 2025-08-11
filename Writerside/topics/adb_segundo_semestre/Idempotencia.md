@@ -48,13 +48,13 @@ dotnet add package IdempotentAPI --version 2.1.0
 
 1. **Registrar serviços** em `Program.cs`:
 
-```csharp
+```c#
 builder.Services.AddIdempotentAPI();
 ```
 
 1. **Adicionar cache distribuído** (exemplo in-memory):
 
-```csharp
+```c#
 builder.Services.AddIdempotentMinimalAPI(new IdempotencyOptions());
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddIdempotentAPIUsingDistributedCache();
@@ -62,7 +62,7 @@ builder.Services.AddIdempotentAPIUsingDistributedCache();
 
 1. **Marcar objetos de resposta como [Serializable]** (quando necessário):
 
-```csharp
+```c#
 [Serializable]
 public record CardAddOrUpdateModel
 {
@@ -74,7 +74,7 @@ public record CardAddOrUpdateModel
 
 1. **Opcional**: marcar controllers:
 
-```csharp
+```c#
 [Idempotent(ExpireHours = 48)]
 [ApiController]
 [Route("[controller]")]
@@ -83,7 +83,7 @@ public class WeatherForecastController : ControllerBase { }
 
 1. **Minimal API**:
 
-```csharp
+```c#
 cardGroup.MapPost("/", (CardAddOrUpdateModel model) =>
    {
       cards.Add(model.MapToCard());
@@ -111,7 +111,7 @@ Ao chamar `POST /todoitems/` com cabeçalho `Idempotency-Key`, a aplicação ret
 
 Handler original (inadequado):
 
-```csharp
+```c#
 (TodoModel todoModel, TodoDb db) => { /* ... */ }
 ```
 
@@ -130,7 +130,7 @@ O `DbContext` (`TodoDb`) contém um grafo complexo (ChangeTracker, Services, Pro
 
 ### Handler após fix
 
-```csharp
+```c#
 todogroup.MapPost("/", async (TodoModel todoModel) =>
 {
     using var scope = app.Services.CreateScope();
