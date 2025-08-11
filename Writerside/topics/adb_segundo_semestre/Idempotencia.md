@@ -123,10 +123,6 @@ O `DbContext` (`TodoDb`) contém um grafo complexo (ChangeTracker, Services, Pro
 |---------|-----------|--------|
 | `Program.cs` | Removido `TodoDb db` dos parâmetros do `MapPost`; resolvido via escopo interno (`CreateScope`) | Evita serializar o DbContext |
 | `Program.cs` | Ajustado `Results.Created($"/todoitems/{todo.Id}", todo)` | Corrigir `Location` |
-| `Program.cs` | Simplificação de endpoint `/static` | Limpeza |
-| `Todo.cs` | Uso de `ContentType?.Contains("xml", OrdinalIgnoreCase)` | Evitar `NullReferenceException` |
-| `Todo.cs` | Inicialização de `Title` com `string.Empty` | Remover warning nullable |
-| Root | Limpeza de `.sonarqube/` | Corrigir falha de build |
 
 ### Handler após fix
 
@@ -149,18 +145,6 @@ todogroup.MapPost("/", async (TodoModel todoModel) =>
 ```
 
 ### Como reproduzir o erro antigo
-
-1. Usar versão com `(TodoModel todoModel, TodoDb db)`.
-
-1. Executar:
-
-```bash
-curl -i -H "Content-Type: application/json" -H "Idempotency-Key: k1" \
-   -d '{"title":"Teste","isComplete":false}' http://localhost:5190/todoitems/
-```
-
-1. Resultado: 500 + log interno (circular reference).
-
 
 ### Validando o fix
 
